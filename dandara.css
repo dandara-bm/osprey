@@ -1,0 +1,112 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-gap: 1rem;  
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 80px auto 150px 200px;
+    grid-template-areas: 
+    "a a a "
+    "b b c"
+    "d d e"
+    "d d e"
+    "f f f";
+}
+
+header{
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: space-between;
+}
+
+.topo{background-color: aqua; grid-area: a;}
+.corpo{background-color: turquoise; grid-area: b;}
+.menu1{background-color: aquamarine; grid-area: c;}
+.menu2{background-color: darkturquoise; grid-area: d;}
+.destaques{background-color: deepskyblue;grid-area: e;}
+.rodape{background-color: darkcyan;grid-area: f;}
+
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: wrap;
+    
+}
+.corpo {
+    display: flex;
+    justify-content: space-between;
+    grid-template-rows: 20px 20px;
+ }
+.menu1{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.destaques{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.topo1{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.topo2{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.topo3{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    
+}
+.item2{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.item3{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.item5{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.item6{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
+.item8{
+    grid-template-columns: 1fr;
+    background-color: blue;
+    grid-template-rows: 20px;
+    align-items: center;
+}
+
